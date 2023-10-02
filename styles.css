@@ -1,0 +1,75 @@
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Couleur de fond sombre */
+    color: #fff;
+}
+
+/* Barre de navigation */
+.navbar {
+    background-color: #222;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #007BFF; /* Couleur au survol */
+}
+
+/* En-tête */
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 2em;
+}
+
+/* Sections */
+.section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #333; /* Couleur de fond des sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.section h2 {
+    font-size: 1.5em;
+    color: #007BFF;
+}
+
+/* Pied de page */
+.footer {
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Liens */
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #007BFF;
+}
