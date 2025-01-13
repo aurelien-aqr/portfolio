@@ -34,21 +34,22 @@
                     <ul>
                         <li>
                             <strong>Compétences déployées :</strong> WebGL (GLSL, buffers, shaders), JavaScript (ECS),
-                            Explosions 2D, Particules, Rendu sans HTML/CSS, Physique simplifiée (collisions).
+                            Physique 2D, Particules, HUD, Gestion des collisions.
+                        </li>
+                        <li><strong>Lien </strong>: <a href="https://aurelien-aqr.github.io/asteroids/"
+                                                       target="_blank">Site web produit</a>
                         </li>
                     </ul>
                     <p>
-                        Réalisation d’un clone du jeu Asteroids entièrement géré en WebGL, dans lequel
-                        on pilote un vaisseau pour détruire des astéroïdes, accumuler des points et
-                        gérer un système de vies/respawn.
+                        Réalisation d’un clone du jeu <a href="https://fr.wikipedia.org/wiki/Asteroids" target="_blank">Asteroids</a> en WebGL, dans lequel
+                        on pilote un vaisseau pour détruire des astéroïdes.
                     </p>
 
                     <p><strong>Fonctionnalités principales :</strong></p>
                     <ul>
-                        <li>Rendu intégral via WebGL : aucune interface HTML, tout est dessiné dans un seul canvas.</li>
-                        <li>Système de particules avancé pour les explosions, les débris
-                            (taille, alpha, interpolation de couleurs, rotation).</li>
-                        <li>Contrôles clavier : rotation du vaisseau, accélération (affichage flamme),
+                        <li>Rendu via WebGL : interface HTML minimale, tout est dessiné dans un seul canvas.</li>
+                        <li>Système de particules pour les explosions, les débris.</li>
+                        <li>Contrôles clavier : rotation du vaisseau, accélération,
                             tir, hyperspace aléatoire.</li>
                         <li>Gestion des collisions : astéroïdes divisés en plus petits morceaux,
                             débris du vaisseau en cas de destruction.</li>
@@ -66,22 +67,17 @@
                             pour la couleur (et alpha).
                         </li>
                         <li>
-                            <em>Interpolation</em> de couleurs et alpha pour les explosions : débris
-                            passant du jaune vif au gris fumée.
-                        </li>
-                        <li>
                             <em>Physique simplifiée</em> : wrap de l’écran (si on sort à droite, on réapparaît à gauche), inertie, etc.
                         </li>
                         <li>
-                            <em>Particules</em> : random speed, rotation, fade-out, lifetime, explosion plus réaliste.
+                            <em>Particules</em> : random speed, rotation, fade-out, lifetime.
                         </li>
                     </ul>
 
                     <p>
-                        Ce projet a été réalisé dans un contexte de BUT3, pour illustrer une approche
-                        "sans HTML/CSS" en WebGL pur. Il m'a permis de comprendre les bases du shading,
-                        de manipuler la boucle de rendu et de mettre en œuvre un système de particules
-                        personnalisable pour les explosions d’astéroïdes.
+                        Ce projet a été réalisé en solo dans le cadre de mon BUT3, pour le cours de Sensibilisation à la programmation
+                        multimédia. Il m’a permis de découvrir le développement de jeux vidéo en 2D, et de mettre en pratique
+                        les concepts de WebGL, de shaders, de particules, de physique 2D, et de gestion des collisions.
                     </p>
 
                     <img src="../assets/img/project/asteroids_gameplay.gif" class="img-fluid"
