@@ -68,7 +68,7 @@
     <!-- ======= About Me ======= -->
     <div class="about-me container">
 
-        <div class="section-title">
+        <div class="section-title" style="margin-top: 20px; margin-bottom: 50px;">
             <h2>A propos de moi</h2>
         </div>
 
@@ -118,7 +118,7 @@
     <div class="container">
 
         <!-- Parcours Professionnel -->
-        <div class="section-title" style="margin-top: 50px; margin-bottom: 50px;">
+        <div class="section-title" style="margin-top: 20px; margin-bottom: 50px;">
             <h2>Parcours Professionnel</h2>
         </div>
 
@@ -244,7 +244,7 @@
 <section id="portfolio" class="portfolio">
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-title" style="margin-top: 20px; margin-bottom: 50px;">
             <h2>Projets</h2>
         </div>
 
@@ -369,7 +369,7 @@
 
 <section id="skills" class="services">
     <div class="container">
-        <div class="section-title">
+        <div class="section-title" style="margin-top: 20px; margin-bottom: 50px;">
             <h2>Compétences</h2>
         </div>
 
@@ -527,286 +527,152 @@
 
 <!-- End Skills Section -->
 
-<!-- Start Learning Portfolio Section -->
+<!-- ======= Portfolio d’Apprentissage Section ======= -->
 <section id="learning-portfolio" class="portfolio">
     <div class="container">
-        <div class="section-title" style="margin-top: 50px; margin-bottom: 50px;">
+        <div class="section-title" style="margin-top: 20px; margin-bottom: 50px;">
             <h2>Portfolio d’apprentissage</h2>
         </div>
 
-        <h1>Section en cours de construction</h1>
+        <p>
+            Dans cette section, je présente comment j’ai travaillé et validé les éléments de niveau 3 des compétences
+            “Réaliser”, “Collaborer” et “Optimiser” du référentiel du BUT Informatique. Chaque sous-compétence est illustrée par
+            des projets ou des expériences significatives, afin de mettre en évidence les acquis et les progrès réalisés.
+        </p>
 
-        <!-- Informations générales -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h3 style="color:#12d640">Informations générales</h3>
-                <br>
-                <ul style="list-style-type: none; padding-left: 0;">
-                    <li><strong>Diplôme préparé :</strong> BUT Informatique, parcours RACDV</li>
-                    <li><strong>Établissement :</strong> IUT de Montpellier-Sète</li>
-                    <li><strong>Formation :</strong> Alternance</li>
-                    <li><strong>Entreprise :</strong> Lundi Matin (depuis septembre 2024)</li>
-                </ul>
-            </div>
-        </div>
-        <br>
+        <!-- COMPETENCE : REALISER -->
+        <h3 style="color:#12d640">1. Réaliser (Niveau 3 : Adapter des applications sur un ensemble de supports)</h3>
+        <p>
+            Les apprentissages critiques concernent la capacité à concevoir des architectures logicielles robustes (AC1), à faire évoluer
+            des applications existantes (AC2) et à intégrer des solutions dans un environnement de production (AC3).
+        </p>
 
-        <!-- Activités réalisées -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h3 style="color:#12d640">Activités réalisées</h3>
-            </div>
-        </div>
+        <!-- AC1 -->
+        <h4>AC1 : Choisir et implémenter les architectures adaptées</h4>
+        <p>
+            Sur le projet <strong><a href="projects/sortieski.html" target="_blank">SortieSki</a></strong>, j’ai dû concevoir une architecture composée d’un <em>backend</em>
+            Symfony/API Platform, d’une base de données MySQL et d’un <em>frontend</em> en Vue.js. L’enjeu était de rendre
+            l’application modulable et scalable, avec une séparation claire entre la couche API et la couche présentation.
+            J’ai notamment utilisé les concepts de <em>services</em> et <em>voters</em> sous Symfony afin de gérer la logique
+            métier et la sécurité. La conteneurisation via Docker a également été mise en place pour faciliter le déploiement
+            et l’intégration continue.
+        </p>
 
-        <br>
-        <!-- Mission 1: Lundi Matin -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h4>Mission 1 : Développement mobile en alternance chez Lundi Matin</h4>
-                <br>
-                <!-- Activité 1: Stop Produit -->
-                <h5 style="color:#fcef00">Activité 1 : Développement de la fonctionnalité "Stop Produit"</h5>
-                <p>
-                    Développement et amélioration d'une fonctionnalité partagée entre deux logiciels :
-                <ul>
-                    <li><strong>RoverCash</strong> : logiciel de caisse pour les commerces de toutes tailles (magasins
-                        de vêtements, boutiques de luxe, boulangeries, etc.).
-                    </li>
-                    <li><strong>AirKitchen</strong> : logiciel de caisse pour la restauration (gestion des tables,
-                        écrans cuisine, zones de préparation, etc.).
-                    </li>
-                </ul>
-                La fonctionnalité permet d'arrêter la vente de produits indisponibles (ex. : empêcher la vente de plats
-                si un équipement est hors service ou de boissons en rupture de stock).
-                </p>
-                <ul>
-                    <li><strong>AC associée :</strong> "Intégrer des fonctionnalités métiers dans une application" (AC
-                        1.1)
-                    </li>
-                    <li><strong>CE associée :</strong> "Concevoir des algorithmes adaptés aux besoins utilisateurs" (CE
-                        1.2)
-                    </li>
-                    <li><strong>Niveau estimé :</strong> Maîtrise</li>
-                    <li><strong>Trace associée :</strong> Extraits de code Kotlin et captures d'écran des logiciels avec
-                        la fonctionnalité activée.
-                    </li>
-                </ul>
+        <!-- AC2 -->
+        <h4>AC2 : Faire évoluer une application existante</h4>
+        <p>
+            Dans le cadre du projet <strong><a href="projects/annuaire.html" target="_blank">Les Jaunes Pages</a></strong> (annuaire en ligne), j’ai dû reprendre un code qui
+            incluait déjà des fonctionnalités de base (inscription, édition de profil) et y ajouter de nouvelles
+            fonctionnalités comme la gestion de l’affichage masqué, la génération de codes uniques, ainsi que la mise
+            en place d’une <em>API JSON</em>. Cela m’a permis de travailler sur la refactorisation du code, la mise à jour
+            de la base de données et l’optimisation de certains écrans pour améliorer l’expérience utilisateur.
+        </p>
 
-                <!-- Activité 2: Migration vers Kotlin/Compose -->
-                <h5 style="color:#fcef00">Activité 2 : Migration de Java/XML vers Kotlin/Compose</h5>
-                <p>
-                    Réorganisation et modernisation de l'architecture des deux applications pour migrer de Java/XML vers
-                    Kotlin/Compose.
-                    L’objectif était de simplifier la maintenabilité, d’améliorer les performances et de rendre le code
-                    plus robuste face aux évolutions.
-                </p>
-                <ul>
-                    <li><strong>AC associée :</strong> "Refactoriser une application pour améliorer sa maintenabilité"
-                        (AC 2.3)
-                    </li>
-                    <li><strong>CE associée :</strong> "Utiliser des outils modernes pour le développement
-                        d'applications mobiles" (CE 2.4)
-                    </li>
-                    <li><strong>Niveau estimé :</strong> Application</li>
-                    <li><strong>Trace associée :</strong> Rapport comparatif des performances avant et après migration,
-                        avec benchmarks.
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <br>
-        <br>
+        <!-- AC3 -->
+        <h4>AC3 : Intégrer des solutions dans un environnement de production</h4>
+        <p>
+            Lors du projet <strong><a href="projects/semaphore.html" target="_blank">Sémaphore</a></strong> (application de gestion des stages et alternances), nous avons
+            progressivement migré notre plateforme de l’environnement de développement à un hébergement de test, avant de
+            valider sa mise en production. Nous avons mis en place des scripts d’initialisation de la base de données (SQL,
+            PLSQL) et des procédures de déploiement (via Git et un serveur distant) afin de garantir la cohérence des
+            données et la continuité du service. Cette mise en production incluait également la gestion des rôles et droits,
+            la sauvegarde régulière de la base et l’ajout de logs pour le suivi des activités.
+        </p>
 
-        <!-- Mission 2: Les Jaunes Pages -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h4>Mission 2 : Projet "Les Jaunes Pages"</h4>
-                <br>
-                <!-- Activité 1: Application Symfony -->
-                <h5 style="color:#fcef00">Activité 1 : Développement de l’application d’annuaire avec Symfony</h5>
-                <p>
-                    Conception et réalisation d’une application Symfony pour gérer des profils utilisateurs
-                    avec des fonctionnalités comme la création, la suppression, et la gestion de la visibilité des
-                    profils.
-                </p>
-                <ul>
-                    <li><strong>AC associée :</strong> "Développer une application répondant à des besoins spécifiques"
-                        (AC 1.3)
-                    </li>
-                    <li><strong>CE associée :</strong> "Mettre en place une architecture MVC robuste" (CE 1.5)</li>
-                    <li><strong>Niveau estimé :</strong> Maîtrise</li>
-                    <li><strong>Trace associée :</strong> Modèles UML et captures d’écran de l’interface utilisateur.
-                    </li>
-                </ul>
+        <!-- COMPETENCE : COLLABORER -->
+        <h3 style="color:#12d640">2. Collaborer (Niveau 3 : Manager une équipe informatique)</h3>
+        <p>
+            Les apprentissages critiques résident ici dans la capacité à organiser et partager une veille numérique (AC1),
+            identifier les enjeux de l’économie de l’innovation (AC2), guider la conduite du changement informatique (AC3)
+            et accompagner le management de projet (AC4).
+        </p>
 
-                <!-- Activité 2: Création d’une API avec API Platform -->
-                <h5 style="color:#fcef00">Activité 2 : Développement d’une API de gestion d’événements</h5>
-                <p>
-                    Création d’une API REST avec API Platform pour gérer des sorties au ski.
-                    Cette API permet d’ajouter, de supprimer et de lister les événements, ainsi que de gérer les
-                    inscriptions.
-                </p>
-                <ul>
-                    <li><strong>AC associée :</strong> "Concevoir et implémenter une API sécurisée" (AC 2.2)</li>
-                    <li><strong>CE associée :</strong> "Optimiser les performances des requêtes API" (CE 2.6)</li>
-                    <li><strong>Niveau estimé :</strong> Application</li>
-                    <li><strong>Trace associée :</strong> Documentation Swagger de l’API et captures des requêtes
-                        Postman.
-                    </li>
-                </ul>
+        <!-- AC1 -->
+        <h4>AC1 : Organiser et partager une veille numérique</h4>
+        <p>
+            Pour le projet <strong><a href="projects/nuit_info.html" target="_blank">Nuit de l’Info</a></strong>, j’ai d’abord effectué une veille technologique sur les solutions
+            de développement rapide de jeux éducatifs (RenPy, Unity, etc.). J’ai créé un document partagé (sur Google Drive)
+            pour référencer les ressources, outils et tutoriels permettant à notre équipe de décider rapidement de la
+            plateforme la plus adaptée. Cette veille a grandement aidé à répartir les rôles et choisir les bonnes
+            technologies dans un délai très court (une nuit).
+        </p>
 
-                <!-- Activité 3: Interface utilisateur en Vue.js -->
-                <h5 style="color:#fcef00">Activité 3 : Création d’une interface utilisateur avec Vue.js</h5>
-                <p>
-                    Développement d’une interface utilisateur en Vue.js connectée à l’API de gestion d’événements et
-                    à l’annuaire Symfony pour offrir une expérience utilisateur fluide et intuitive.
-                </p>
-                <ul>
-                    <li><strong>AC associée :</strong> "Créer une interface utilisateur dynamique et connectée" (AC 3.1)
-                    </li>
-                    <li><strong>CE associée :</strong> "Assurer la cohérence entre front-end et back-end" (CE 3.3)</li>
-                    <li><strong>Niveau estimé :</strong> Expertise</li>
-                    <li><strong>Trace associée :</strong> Captures de l’interface Vue.js et exemples de flux
-                        utilisateur.
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <!-- AC2 -->
+        <h4>AC2 : Identifier les enjeux de l’économie de l’innovation numérique</h4>
+        <p>
+            J’ai eu l’occasion de mesurer concrètement les enjeux de l’innovation numérique lors de mon stage chez
+            <strong>Lundi Matin</strong>, où j’ai participé au développement d’une Marketplace “API-First”. J’ai pu voir
+            comment le positionnement d’un produit innovant sur le marché (plateforme en marque blanche, modules d’e-commerce,
+            etc.) influe sur la concurrence et la valeur ajoutée pour les clients. Cela m’a sensibilisé à la notion de
+            “time to market” et au besoin permanent d’anticiper les évolutions technologiques et réglementaires.
+        </p>
 
-        <div class="container">
-            <div class="section-title" style="margin-top: 50px; margin-bottom: 50px;">
-                <h2>Mon point de vue sur la formation</h2>
-            </div>
+        <!-- AC3 -->
+        <h4>AC3 : Guider la conduite du changement informatique au sein d’une organisation</h4>
+        <p>
+            Dans le projet <strong><a href="projects/semaphore.html" target="_blank">Sémaphore</a></strong>, nous avons dû migrer d’une gestion manuelle des stages (Excel, e-mails)
+            vers une application web centralisée. J’ai contribué à la rédaction d’une documentation fonctionnelle et à la
+            création d’un tutoriel utilisateur. Cette démarche d’accompagnement avait pour but de limiter la résistance au changement et
+            d’intégrer progressivement l’outil dans la routine de l’IUT.
+        </p>
 
-            <!-- Réponse 1 -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 style="color:#12d640">Ai-je réalisé les objectifs fixés par le programme national ?</h3>
-                    <p>Oui, j’ai atteint la majorité des objectifs grâce à mon alternance et mes projets académiques.
-                        J’ai acquis des compétences solides en conception, développement et optimisation d’applications.
-                        Cependant, certains domaines nécessitent encore du perfectionnement :</p>
-                    <ul>
-                        <li><strong>AC 2.5 :</strong> Identifier et corriger les goulets d'étranglement dans une
-                            application complexe.
-                        </li>
-                        <li><strong>CE 3.4 :</strong> Assurer la sécurité des données sensibles d’une application
-                            distribuée.
-                        </li>
-                    </ul>
-                    <p>Ces points seront des axes prioritaires d’amélioration pour consolider mes compétences.</p>
-                </div>
-            </div>
+        <!-- AC4 -->
+        <h4>AC4 : Accompagner le management de projet informatique</h4>
+        <p>
+            Sur des projets en groupe comme <strong><a href="projects/annuaire.html" target="_blank">Les Jaunes Pages</a></strong> ou <strong><a href="projects/sortieski.html" target="_blank">SortieSki</a></strong>, j’ai assuré un
+            rôle de <em>Scrum Master</em> à plusieurs reprises. J’ai animé nos “daily meetings”, veillé au respect du backlog
+            et facilité la communication entre les membres. Cet encadrement, couplé à des outils comme Git/GitLab et
+            Trello/Notion, nous a permis de répartir efficacement les tâches et de livrer un produit final répondant au
+            cahier des charges dans les temps.
+        </p>
 
-            <!-- Réponse 2 -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 style="color:#12d640">Qu’ai-je mis en pratique de ma formation en entreprise, en TD ou pendant
-                        la SAÉ ?</h3>
-                    <p>En alternance chez <strong>Lundi Matin</strong>, j’ai mis en application :</p>
-                    <ul>
-                        <li>Les concepts de conception MVC pour structurer mes projets.</li>
-                        <li>Les tests unitaires pour garantir la fiabilité des fonctionnalités critiques.</li>
-                        <li>L’optimisation de performances via des techniques modernes comme Kotlin/Compose.</li>
-                    </ul>
-                    <p>En SAÉ, j’ai appris à :</p>
-                    <ul>
-                        <li>Modéliser des systèmes avec UML.</li>
-                        <li>Développer et documenter des API REST (API Platform).</li>
-                        <li>Collaborer efficacement en équipe avec la méthodologie Scrum.</li>
-                    </ul>
-                </div>
-            </div>
+        <!-- COMPETENCE : OPTIMISER -->
+        <h3 style="color:#12d640">3. Optimiser (Niveau 3 : Analyser et optimiser des applications)</h3>
+        <p>
+            Les points essentiels se concentrent sur la capacité à anticiper les métriques (AC1), profiler et analyser un
+            code existant (AC2), et choisir des bibliothèques ou méthodes adaptées à un domaine spécifique (AC3).
+        </p>
 
-            <!-- Réponse 3 -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 style="color:#12d640">Ai-je rencontré des difficultés particulières, des situations
-                        problématiques ?</h3>
-                    <p>Oui, certaines situations ont été particulièrement exigeantes :</p>
-                    <h4>1. Migration vers Kotlin/Compose</h4>
-                    <p>La transition d’un code existant en Java/XML vers Kotlin/Compose impliquait une compréhension
-                        approfondie du code legacy. Pour surmonter cela, j’ai :</p>
-                    <ul>
-                        <li>Étudié la documentation officielle et les bonnes pratiques.</li>
-                        <li>Travaillé en collaboration avec mon équipe pour clarifier les zones d’ombre.</li>
-                        <li>Validé chaque étape de migration à travers des tests unitaires.</li>
-                    </ul>
+        <!-- AC1 -->
+        <h4>AC1 : Anticiper les résultats de diverses métriques</h4>
+        <p>
+            Dans le projet <strong><a href="projects/asteroids.html" target="_blank">Asteroids WebGL</a></strong>, j’ai dû prendre en compte la fluidité d’animation (nombre
+            d’images par seconde), la consommation mémoire pour les particules et la gestion des collisions. J’ai
+            implémenté un <em>compteur de FPS</em> et ajusté la taille des buffers pour éviter une surcharge. Cette approche
+            m’a permis de maintenir un équilibre entre performance et qualité graphique, en anticipant les limites
+            matérielles potentielles des utilisateurs.
+        </p>
 
-                    <h4>2. Intégration de la fonctionnalité "Stop Produit"</h4>
-                    <p>Le code commun entre <strong>RoverCash</strong> et <strong>AirKitchen</strong> posait des
-                        conflits techniques. Pour y remédier :</p>
-                    <ul>
-                        <li>J’ai centralisé la logique métier dans une structure modulaire.</li>
-                        <li>J’ai coordonné des réunions techniques entre les responsables des deux projets.</li>
-                    </ul>
-                </div>
-            </div>
+        <!-- AC2 -->
+        <h4>AC2 : Profiler, analyser et justifier le comportement d’un code existant</h4>
+        <p>
+            Lors de la maintenance de <strong><a href="projects/aventuriers_rail.html" target="_blank">Les Aventuriers du Rail</a></strong> en Java, j’ai utilisé des tests unitaires et
+            un profiler Java (VisualVM) pour repérer les fonctions trop consommatrices en temps de calcul (notamment la
+            recherche de chemins via Dijkstra). En optimisant la structure de données et en réduisant le recalcul de certains
+            parcours, nous avons diminué le temps de traitement lorsqu’il y avait beaucoup de villes et de routes à gérer.
+        </p>
 
-            <!-- Réponse 4 -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 style="color:#12d640">Qu’est-ce qui m’a plu particulièrement ?</h3>
-                    <p>Ce qui m’a le plus marqué, c’est la diversité et l’impact des projets :</p>
-                    <ul>
-                        <li>Travailler sur des solutions concrètes comme <strong>RoverCash</strong> et <strong>AirKitchen</strong>.
-                        </li>
-                        <li>Utiliser des technologies modernes comme <strong>API Platform</strong>,
-                            <strong>Vue.js</strong> et <strong>Kotlin/Compose</strong>.
-                        </li>
-                        <li>Collaborer dans des environnements dynamiques, tant en entreprise qu’en SAÉ.</li>
-                    </ul>
-                    <p>Le fait de voir mes contributions directement utilisées par des clients a été particulièrement
-                        gratifiant.</p>
-                </div>
-            </div>
+        <!-- AC3 -->
+        <h4>AC3 : Choisir et utiliser des bibliothèques et méthodes dédiées à un domaine</h4>
+        <p>
+            Sur le projet <strong><a href="projects/loup_garou.html" target="_blank">Loup-Garou en ligne</a></strong>, j’ai opté pour des bibliothèques JavaScript (Ajax et
+            fetch) pour la communication asynchrone côté client, et j’ai couplé cela avec un serveur PHP/MySQL pour
+            gérer les sessions de jeu en temps réel. J’ai aussi étudié des solutions Node.js/Socket.io mais j’ai finalement
+            préféré une approche plus classique (PHP + requêtes Ajax) pour la simplicité de déploiement et la compatibilité
+            sur un hébergement mutualisé gratuit. Cette décision illustre ma capacité à évaluer les contraintes du projet
+            (ressources serveurs, temps de développement, besoin réel de temps-réel strict) pour choisir la bibliothèque
+            la plus adaptée.
+        </p>
 
-            <!-- Réponse 5 -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 style="color:#12d640">Qu’est-ce que j’ai moins aimé, qu’est-ce qui m’a paru difficile ?</h3>
-                    <p>Les principaux défis ont été :</p>
-                    <ul>
-                        <li>Les délais serrés dans certains projets, générant parfois du stress.</li>
-                        <li>L’analyse de code legacy non documenté, qui ralentissait la compréhension et l’avancée du
-                            projet.
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <p style="margin-top: 30px;">
+            Ainsi, chacun de ces projets a contribué au développement et à la validation de compétences critiques de niveau 3
+            pour “Réaliser”, “Collaborer” et “Optimiser”. Je reste en veille constante pour approfondir ces compétences au fil
+            de mes futurs projets et de mon expérience professionnelle.
+        </p>
 
-            <!-- Réponse 6 -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 style="color:#12d640">Quel est mon projet post-BUT ?</h3>
-                    <p>Mon projet post-BUT est d’intégrer une école d’ingénieur spécialisée en :</p>
-                    <ul>
-                        <li><strong>Développement logiciel</strong>, pour concevoir des solutions innovantes.</li>
-                        <li><strong>Intelligence artificielle</strong>, afin d'explorer les possibilités offertes par le
-                            machine learning.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Réponse 7 -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 style="color:#12d640">Dans quelle mesure cette formation a-t-elle fait évoluer mon projet ?</h3>
-                    <p>Cette formation a profondément influencé mon projet professionnel :</p>
-                    <ul>
-                        <li>Elle a confirmé mon intérêt pour le développement et l’optimisation d’applications.</li>
-                        <li>Elle m’a donné une vision globale des projets, de la conception à la mise en production.
-                        </li>
-                        <li>Elle m’a permis de mieux définir mes ambitions à long terme, notamment en intelligence
-                            artificielle.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
-<!-- End Learning Portfolio Section -->
+<!-- End Portfolio d’Apprentissage Section -->
 
 
 <!-- Start Contact Section -->
@@ -814,7 +680,7 @@
 <section id="contacts" class="contact">
     <div class="container">
 
-        <div class="section-title">
+        <div class="section-title" style="margin-top: 20px; margin-bottom: 50px;">
             <h2>Contact</h2>
         </div>
 
