@@ -395,7 +395,7 @@ section .container {
 }
 
 .paragraph-container {
-  text-align: justify;
+  text-align: start;
 }
 
 
