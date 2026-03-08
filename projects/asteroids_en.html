@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Asteroids WebGL</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Poppins" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<main id="main">
+    <div id="portfolio-details" class="portfolio-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 portfolio-info">
+                    <br>
+                    <div class="mb-3">
+                        <a href="asteroids.html" class="btn btn-sm btn-outline-light mr-2">FR</a>
+                        <a href="asteroids_en.html" class="btn btn-sm btn-success">EN</a>
+                    </div>
+                    <h2 style="color:#12d640">Asteroids WebGL (Bachelor Year 3 project)</h2>
+                    <ul>
+                        <li>
+                            <strong>Key skills used:</strong> WebGL (GLSL, buffers, shaders), JavaScript (ECS),
+                            2D physics, Particles, HUD, Collision management.
+                        </li>
+                        <li><strong>Link </strong>: <a href="https://aurelien-aqr.github.io/asteroids/"
+                                                       target="_blank">Live website</a>
+                        </li>
+                    </ul>
+                    <p>
+                        Development of a clone of <a href="https://fr.wikipedia.org/wiki/Asteroids" target="_blank">Asteroids</a> in WebGL, where you control a spaceship to destroy asteroids.
+                    </p>
+
+                    <p><strong>Main features:</strong></p>
+                    <ul>
+                        <li>Rendering with WebGL: minimal HTML interface, everything is drawn in a single canvas.</li>
+                        <li>Particle system for explosions and debris.</li>
+                        <li>Keyboard controls: ship rotation, acceleration, shooting, random hyperspace.</li>
+                        <li>Collision system: asteroids split into smaller pieces, and ship debris on destruction.</li>
+                        <li>HUD drawn in WebGL: score, level, lives count, and "GAME OVER" message.</li>
+                    </ul>
+
+                    <p><strong>Technical aspects:</strong></p>
+                    <ul>
+                        <li>
+                            <em>Architecture ECS</em> : position, velocity, collision, rendering, lifetime,
+                            etc. allowing modular code.
+                        </li>
+                        <li>
+                            <em>Shaders GLSL</em> : a vertex shader for 2D transformations, un fragment shader
+                            for color (and alpha).
+                        </li>
+                        <li>
+                            <em>Simplified physics</em> : screen wrapping (if you leave the right side, you reappear on the left), inertia, etc.
+                        </li>
+                        <li>
+                            <em>Particles</em> : random speed, rotation, fade-out, lifetime.
+                        </li>
+                    </ul>
+
+                    <p>
+                        This project was completed solo during my third year, for the Multimedia Programming course. It helped me discover 2D game development and apply WebGL, shaders, particles, 2D physics, and collision management concepts.
+                    </p>
+
+                    <img src="../assets/img/project/asteroids_gameplay.gif" class="img-fluid"
+                         alt="Illustration Asteroids WebGL">
+                    <p>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Vendor JS Files -->
+<script src="../assets/vendor/jquery/jquery.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/venobox/venobox.min.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>
