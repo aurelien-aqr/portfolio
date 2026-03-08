@@ -33,72 +33,48 @@
                         <a href="sortieski.html" class="btn btn-sm btn-outline-light mr-2">FR</a>
                         <a href="sortieski_en.html" class="btn btn-sm btn-success">EN</a>
                     </div>
-                    <h2 style="color:#12d640">SortieSki - Event management (Bachelor Year 3 project)</h2>
+                    <h2 style="color:#12d640">SortieSki - Event Management Platform (Third-Year Bachelor's Project)</h2>
                     <ul>
-                        <li><strong>Key skills used:</strong> Vue.js, API Platform, MySQL, Docker, JWT,
-                            Permissions, Symfony, API REST, Agile methodology.
-                        </li>
-                        <li><strong>Link </strong>: <a href="https://webinfo.iutmontp.univ-montp2.fr/~alquiera/projetVue/dist/"
-                                                       target="_blank">Live website</a>
-                        </li>
+                        <li><strong>Skills used:</strong> Vue.js, API Platform, MySQL, Docker, JWT, Permissions, Symfony, REST API, Agile methodology.</li>
+                        <li><strong>Link</strong>: <a href="https://webinfo.iutmontp.univ-montp2.fr/~alquiera/projetVue/dist/" target="_blank">Live website</a></li>
                     </ul>
                     <p>
-                        Development of an application <strong>API REST</strong> en Symfony pour la management de voyages de ski
-                        (création, inscription, annulation, rôles, etc.). L’API est intégrée avec un <em>frontend Vue.js</em>
-                        pour offrir une interface utilisateur conviviale. De plus, une partie “annuaire” (<em>Les Jaunes Pages</em>)
-                        est en lien avec cette application pour gérer et authentifier les participants.
+                        Development of a <strong>REST API</strong> with Symfony for managing ski trips (creation, registration, cancellation, user roles, etc.). The API is connected to a <em>Vue.js frontend</em> to provide a user-friendly interface. In addition, a directory module called <em>Les Jaunes Pages</em> is linked to the application to manage and authenticate participants.
                     </p>
 
                     <p><strong>Main features:</strong></p>
                     <ul>
-                        <li><em>Gestion des voyages :</em> création, modification, suppression, définition du lieu, date,
-                            prix et activités incluses.
-                        </li>
-                        <li><em>Inscription / désinscription :</em> un utilisateur authentifié peut rejoindre ou quitter un voyage.
-                        </li>
-                        <li><em>Rôles et permissions :</em>
+                        <li><em>Trip management:</em> create, edit, and delete trips, as well as define the destination, date, price, and included activities.</li>
+                        <li><em>Registration / cancellation:</em> authenticated users can join or leave a trip.</li>
+                        <li><em>Roles and permissions:</em>
                             <ul>
-                                <li><code>ROLE_USER</code> : participation aux voyages.</li>
-                                <li><code>ROLE_ORGA</code> : création, édition et suppression de voyages organisés.</li>
-                                <li><code>ROLE_ADMIN</code> : suppression des users et voyages, management avancée.</li>
+                                <li><code>ROLE_USER</code>: can participate in trips.</li>
+                                <li><code>ROLE_ORGA</code>: can create, edit, and delete the trips they organize.</li>
+                                <li><code>ROLE_ADMIN</code>: can delete users and trips, with extended administration rights.</li>
                             </ul>
                         </li>
-                        <li><em>Liste publique ou privée des participants</em> : chaque organisateur peut rendre publique
-                            ou non la liste de ses voyageurs.
-                        </li>
-                        <li><em>Authentification via JWT</em> : l’API est sécurisée et génère un token pour accéder aux
-                            endpoints protégés.
-                        </li>
+                        <li><em>Public or private participant list:</em> each organizer can decide whether the list of participants is visible to others.</li>
+                        <li><em>JWT authentication:</em> the API is secured and generates tokens to access protected endpoints.</li>
                     </ul>
 
                     <p>
-                        L’application communique par JSON et supporte le CRUD complet sur les entités “Voyage” et
-                        “Utilisateur”. Le tout est conteneurisé via Docker pour faciliter le déploiement.
+                        The application communicates through JSON and supports full CRUD operations for both the “Trip” and “User” entities. The entire project is containerized with Docker to simplify deployment.
                     </p>
 
-                    <p><strong>Some technical details:</strong></p>
+                    <p><strong>Technical details:</strong></p>
                     <ul>
-                        <li>Base de data MySQL, migrations et fixtures (jeu de data factices).</li>
-                        <li>JWT implémenté via <code>LexikJWTAuthenticationBundle</code>.</li>
-                        <li>Gestion fine des droits avec des <em>Voters</em> et des annotations (par exemple, un
-                            organisateur ne peut éditer que ses propres voyages).
-                        </li>
-                        <li>Intégration avec le projet d’annuaire <em>“Les Jaunes Pages”</em> : un champ <code>code</code>
-                            permet de faire le lien avec l’API de l’annuaire, assurant ainsi une cohérence utilisateur.
-                        </li>
-                        <li>Front Vue.js pour l’interface web publique : la partie Vue.js appelle
-                            les endpoints de l’API et affiche dynamiquement les voyages et inscriptions.
-                        </li>
+                        <li>MySQL database with migrations and fixtures for sample data generation.</li>
+                        <li>JWT authentication implemented with <code>LexikJWTAuthenticationBundle</code>.</li>
+                        <li>Fine-grained access control using <em>Voters</em> and annotations. For example, an organizer can only edit their own trips.</li>
+                        <li>Integration with the directory project <em>Les Jaunes Pages</em>: a <code>code</code> field links users to the directory API and ensures consistency between both systems.</li>
+                        <li>Vue.js frontend for the public web interface: it calls the API endpoints and dynamically displays trips and registrations.</li>
                     </ul>
 
                     <p>
-                        Completed in a team of four, ce projet vise à perfectionner nos compétences en <strong>développement web</strong>, en Symfony orienté
-                        <strong>API REST</strong>, en management d’users avec <strong>plusieurs rôles</strong> et en
-                        conteneurisation <strong>Docker</strong>.
+                        Developed as part of a team of four, this project was designed to strengthen our skills in <strong>web development</strong>, <strong>REST API development with Symfony</strong>, <strong>multi-role user management</strong>, and <strong>Docker-based containerization</strong>.
                     </p>
 
-                    <img src="../assets/img/project/ski_illu.png" class="img-fluid"
-                         alt="Illustration SortieSki">
+                    <img src="../assets/img/project/ski_illu.png" class="img-fluid" alt="SortieSki illustration">
                 </div>
             </div>
         </div>
